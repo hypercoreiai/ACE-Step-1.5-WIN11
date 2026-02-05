@@ -193,7 +193,7 @@ def create_generation_section(dit_handler, llm_handler, init_params=None, langua
             with gr.Row():
                 lora_path = gr.Textbox(
                     label="LoRA Path",
-                    placeholder="F:\AceStep\ACE-Step-1.5\datasets\lora_output",
+                    placeholder="c:\AceStep\ACE-Step-1.5\datasets\lora_output",
                     info="Path to trained LoRA adapter directory",
                     scale=3,
                 )

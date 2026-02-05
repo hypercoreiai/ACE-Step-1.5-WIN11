@@ -12,10 +12,10 @@ Installed 2 packages in 3.94s
  
  Notes: there is a logic when the app first starts to sync these libraries, it is by the original coders design. Somewhere in the sync code nano-vllm gets lost sometimes. If you plan on using it in the lora train workflow, make sure you run the uv pip ... command above before starting the app. I does not affect the music generation workflow and the same workflow can work without it from what I see. You will see it Uninstalled and Installed 2 packages after starting the acestep app:
  
-(ace-step) PS F:\AceStep\ACE-Step-1.5> uv run .\acestep
+(ace-step) PS c:\AceStep\ACE-Step-1.5> uv run .\acestep
 Uninstalled 2 packages in 73ms
 Installed 2 packages in 4.08s
-Loaded configuration from F:\AceStep\ACE-Step-1.5\.env
+Loaded configuration from c:\AceStep\ACE-Step-1.5\.env
  ---------------------------Launch--------------------------------
  uv run .\acestep
  

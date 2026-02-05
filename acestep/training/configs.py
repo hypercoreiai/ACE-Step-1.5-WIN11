@@ -76,7 +76,7 @@ class TrainingConfig:
     max_grad_norm: float = 1.0
     mixed_precision: str = "bf16"  # Fixed: only bf16 supported
     seed: int = 42
-    output_dir: str = "F:\AceStep\ACE-Step-1.5\datasets\lora_output"
+    output_dir: str = "c:\AceStep\ACE-Step-1.5\datasets\lora_output"
     
     # Data loading
     num_workers: int = 4

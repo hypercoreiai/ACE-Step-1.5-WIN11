@@ -49,7 +49,7 @@ def create_training_section(dit_handler, llm_handler, init_params=None) -> dict:
                         with gr.Row():
                             load_json_path = gr.Textbox(
                                 label="Dataset JSON Path",
-                                placeholder="F:\AceStep\ACE-Step-1.5\datasets\test1_lora_dataset.json",
+                                placeholder="c:\AceStep\ACE-Step-1.5\datasets\test1_lora_dataset.json",
                                 info="Load a previously saved dataset",
                                 scale=3,
                             )
@@ -279,7 +279,7 @@ def create_training_section(dit_handler, llm_handler, init_params=None) -> dict:
                     with gr.Column(scale=3):
                         save_path = gr.Textbox(
                             label="Save Path",
-                            value="F:\AceStep\ACE-Step-1.5\datasets\test1_lora_dataset.json",
+                            value="c:\AceStep\ACE-Step-1.5\datasets\test1_lora_dataset.json",
                             placeholder="./datasets/dataset_name.json",
                             info="Path where the dataset JSON will be saved",
                         )
@@ -310,7 +310,7 @@ def create_training_section(dit_handler, llm_handler, init_params=None) -> dict:
                     with gr.Column(scale=3):
                         load_existing_dataset_path = gr.Textbox(
                             label="Load Existing Dataset (Optional)",
-                            placeholder="F:\AceStep\ACE-Step-1.5\datasets\test1_lora_dataset.json",
+                            placeholder="c:\AceStep\ACE-Step-1.5\datasets\test1_lora_dataset.json",
                             info="Path to a previously saved dataset JSON file",
                         )
                     with gr.Column(scale=1):
@@ -339,8 +339,8 @@ def create_training_section(dit_handler, llm_handler, init_params=None) -> dict:
                     with gr.Column(scale=3):
                         preprocess_output_dir = gr.Textbox(
                             label="Tensor Output Directory",
-                            value="F:\AceStep\ACE-Step-1.5\datasets\preprocessed_tensors",
-                            placeholder="F:\AceStep\ACE-Step-1.5\datasets\preprocessed_tensors",
+                            value="c:\AceStep\ACE-Step-1.5\datasets\preprocessed_tensors",
+                            placeholder="c:\AceStep\ACE-Step-1.5\datasets\preprocessed_tensors",
                             info="Directory to save preprocessed tensor files",
                         )
                     with gr.Column(scale=1):
@@ -369,8 +369,8 @@ def create_training_section(dit_handler, llm_handler, init_params=None) -> dict:
                         
                         training_tensor_dir = gr.Textbox(
                             label="Preprocessed Tensors Directory",
-                            placeholder="F:\AceStep\ACE-Step-1.5\datasets\preprocessed_tensors",
-                            value="F:\AceStep\ACE-Step-1.5\datasets\preprocessed_tensors",
+                            placeholder="c:\AceStep\ACE-Step-1.5\datasets\preprocessed_tensors",
+                            value="c:\AceStep\ACE-Step-1.5\datasets\preprocessed_tensors",
                             info="Directory containing preprocessed .pt tensor files",
                         )
                         
@@ -473,8 +473,8 @@ def create_training_section(dit_handler, llm_handler, init_params=None) -> dict:
                 with gr.Row():
                     lora_output_dir = gr.Textbox(
                         label="Output Directory",
-                        value="F:\AceStep\ACE-Step-1.5\datasets\lora_output",
-                        placeholder="F:\AceStep\ACE-Step-1.5\datasets\lora_output",
+                        value="c:\AceStep\ACE-Step-1.5\datasets\lora_output",
+                        placeholder="c:\AceStep\ACE-Step-1.5\datasets\lora_output",
                         info="Directory to save trained LoRA weights",
                     )
                 
@@ -522,8 +522,8 @@ def create_training_section(dit_handler, llm_handler, init_params=None) -> dict:
                 with gr.Row():
                     export_path = gr.Textbox(
                         label="Export Path",
-                        value="F:\AceStep\ACE-Step-1.5\datasets\lora_output\final_lora",
-                        placeholder="F:\AceStep\ACE-Step-1.5\datasets\lora_output\my_lora",
+                        value="c:\AceStep\ACE-Step-1.5\datasets\lora_output\final_lora",
+                        placeholder="c:\AceStep\ACE-Step-1.5\datasets\lora_output\my_lora",
                     )
                     export_lora_btn = gr.Button("📦 Export LoRA", variant="secondary")
                 

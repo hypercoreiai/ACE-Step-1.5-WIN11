@@ -134,7 +134,7 @@ Open http://localhost:7860 in your browser. Models will be downloaded automatica
 uv run --no-sync acestep
 ```
 
-Then uv will not sync, so nano-vllm stays installed. Run `uv sync` yourself only when you change dependencies or pull updates (and run it from the repo root `F:\AceStep\ACE-Step-1.5` so the path to `acestep/third_parts/nano-vllm` is valid).
+Then uv will not sync, so nano-vllm stays installed. Run `uv sync` yourself only when you change dependencies or pull updates (and run it from the repo root `c:\AceStep\ACE-Step-1.5` so the path to `acestep/third_parts/nano-vllm` is valid).
 
 #### 🌐 REST API Server
 

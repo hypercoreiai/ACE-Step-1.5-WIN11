@@ -1899,34 +1899,34 @@ Traceback (most recent call last):
     self.run()
     │    └ <function WorkerThread.run at 0x0000020889971620>
     └ <WorkerThread(AnyIO worker thread, started daemon 28960)>
-  File "F:\AceStep\ACE-Step-1.5\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 986, in run
+  File "c:\AceStep\ACE-Step-1.5\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 986, in run
     result = context.run(func, *args)
-             │       │   │      └ ('F:\\AceStep\\ACE-Step-1.5\\datasets\\my_lora_dataset.json', <acestep.training.dataset_builder.DatasetBuilder object at 0x00...
+             │       │   │      └ ('c:\\AceStep\\ACE-Step-1.5\\datasets\\my_lora_dataset.json', <acestep.training.dataset_builder.DatasetBuilder object at 0x00...
              │       │   └ <function load_existing_dataset_for_preprocess at 0x0000020B04A974C0>
              │       └ <method 'run' of '_contextvars.Context' objects>
              └ <_contextvars.Context object at 0x0000020889258AC0>
-  File "F:\AceStep\ACE-Step-1.5\.venv\Lib\site-packages\gradio\utils.py", line 1036, in wrapper
+  File "c:\AceStep\ACE-Step-1.5\.venv\Lib\site-packages\gradio\utils.py", line 1036, in wrapper
     response = f(*args, **kwargs)
                │  │       └ {}
-               │  └ ('F:\\AceStep\\ACE-Step-1.5\\datasets\\my_lora_dataset.json', <acestep.training.dataset_builder.DatasetBuilder object at 0x00...
+               │  └ ('c:\\AceStep\\ACE-Step-1.5\\datasets\\my_lora_dataset.json', <acestep.training.dataset_builder.DatasetBuilder object at 0x00...
                └ <function load_existing_dataset_for_preprocess at 0x0000020887319300>
 
-  File "F:\AceStep\ACE-Step-1.5\acestep\gradio_ui\events\training_handlers.py", line 311, in load_existing_dataset_for_preprocess
+  File "c:\AceStep\ACE-Step-1.5\acestep\gradio_ui\events\training_handlers.py", line 311, in load_existing_dataset_for_preprocess
     samples, status = builder.load_dataset(dataset_path)
-                      │       │            └ 'F:\\AceStep\\ACE-Step-1.5\\datasets\\my_lora_dataset.json'
+                      │       │            └ 'c:\\AceStep\\ACE-Step-1.5\\datasets\\my_lora_dataset.json'
                       │       └ <function DatasetBuilder.load_dataset at 0x0000020884CE8CC0>
                       └ <acestep.training.dataset_builder.DatasetBuilder object at 0x0000020B053BBF10>
 
-> File "F:\AceStep\ACE-Step-1.5\acestep\training\dataset_builder.py", line 816, in load_dataset
+> File "c:\AceStep\ACE-Step-1.5\acestep\training\dataset_builder.py", line 816, in load_dataset
     data = json.load(f)
-           │    │    └ <_io.TextIOWrapper name='F:\\AceStep\\ACE-Step-1.5\\datasets\\my_lora_dataset.json' mode='r' encoding='utf-8'>
+           │    │    └ <_io.TextIOWrapper name='c:\\AceStep\\ACE-Step-1.5\\datasets\\my_lora_dataset.json' mode='r' encoding='utf-8'>
            │    └ <function load at 0x000002082068E5C0>
            └ <module 'json' from 'C:\\Users\\user0\\AppData\\Roaming\\uv\\python\\cpython-3.11.14-windows-x86_64-none\\Lib\\json\\__init__...
 
   File "C:\Users\user0\AppData\Roaming\uv\python\cpython-3.11.14-windows-x86_64-none\Lib\json\__init__.py", line 293, in load
     return loads(fp.read(),
            │     │  └ <method 'read' of '_io.TextIOWrapper' objects>
-           │     └ <_io.TextIOWrapper name='F:\\AceStep\\ACE-Step-1.5\\datasets\\my_lora_dataset.json' mode='r' encoding='utf-8'>
+           │     └ <_io.TextIOWrapper name='c:\\AceStep\\ACE-Step-1.5\\datasets\\my_lora_dataset.json' mode='r' encoding='utf-8'>
            └ <function loads at 0x000002082068E660>
   File "C:\Users\user0\AppData\Roaming\uv\python\cpython-3.11.14-windows-x86_64-none\Lib\json\__init__.py", line 346, in loads
     return _default_decoder.decode(s)
@@ -1947,37 +1947,37 @@ Traceback (most recent call last):
 
 json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 Traceback (most recent call last):
-  File "F:\AceStep\ACE-Step-1.5\.venv\Lib\site-packages\gradio\queueing.py", line 766, in process_events
+  File "c:\AceStep\ACE-Step-1.5\.venv\Lib\site-packages\gradio\queueing.py", line 766, in process_events
     response = await route_utils.call_process_api(
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "F:\AceStep\ACE-Step-1.5\.venv\Lib\site-packages\gradio\route_utils.py", line 355, in call_process_api
+  File "c:\AceStep\ACE-Step-1.5\.venv\Lib\site-packages\gradio\route_utils.py", line 355, in call_process_api
     output = await app.get_blocks().process_api(
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "F:\AceStep\ACE-Step-1.5\.venv\Lib\site-packages\gradio\blocks.py", line 2152, in process_api
+  File "c:\AceStep\ACE-Step-1.5\.venv\Lib\site-packages\gradio\blocks.py", line 2152, in process_api
     result = await self.call_function(
              ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "F:\AceStep\ACE-Step-1.5\.venv\Lib\site-packages\gradio\blocks.py", line 1629, in call_function
+  File "c:\AceStep\ACE-Step-1.5\.venv\Lib\site-packages\gradio\blocks.py", line 1629, in call_function
     prediction = await anyio.to_thread.run_sync(  # type: ignore
                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "F:\AceStep\ACE-Step-1.5\.venv\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+  File "c:\AceStep\ACE-Step-1.5\.venv\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
     return await get_async_backend().run_sync_in_worker_thread(
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "F:\AceStep\ACE-Step-1.5\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2502, in run_sync_in_worker_thread
+  File "c:\AceStep\ACE-Step-1.5\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2502, in run_sync_in_worker_thread
     return await future
            ^^^^^^^^^^^^
-  File "F:\AceStep\ACE-Step-1.5\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 986, in run
+  File "c:\AceStep\ACE-Step-1.5\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 986, in run
     result = context.run(func, *args)
              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "F:\AceStep\ACE-Step-1.5\.venv\Lib\site-packages\gradio\utils.py", line 1036, in wrapper
+  File "c:\AceStep\ACE-Step-1.5\.venv\Lib\site-packages\gradio\utils.py", line 1036, in wrapper
     response = f(*args, **kwargs)
                ^^^^^^^^^^^^^^^^^^
-  File "F:\AceStep\ACE-Step-1.5\acestep\gradio_ui\events\training_handlers.py", line 314, in load_existing_dataset_for_preprocess
+  File "c:\AceStep\ACE-Step-1.5\acestep\gradio_ui\events\training_handlers.py", line 314, in load_existing_dataset_for_preprocess
     return (status, [], gr.Slider(maximum=0, value=0), builder) + empty_preview
                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "F:\AceStep\ACE-Step-1.5\.venv\Lib\site-packages\gradio\component_meta.py", line 194, in wrapper
+  File "c:\AceStep\ACE-Step-1.5\.venv\Lib\site-packages\gradio\component_meta.py", line 194, in wrapper
     return fn(self, **kwargs)
            ^^^^^^^^^^^^^^^^^^
-  File "F:\AceStep\ACE-Step-1.5\.venv\Lib\site-packages\gradio\components\slider.py", line 88, in __init__
+  File "c:\AceStep\ACE-Step-1.5\.venv\Lib\site-packages\gradio\components\slider.py", line 88, in __init__
     power = math.floor(math.log10(difference) - 2)
                        ^^^^^^^^^^^^^^^^^^^^^^
 ValueError: math domain error
