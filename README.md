@@ -1,5 +1,6 @@
 ----------------------Pre-Launch-----------------------------------------
-uv pip install -e acestep/third_parts/nano-vllm
+
+\nuv pip install -e acestep/third_parts/nano-vllm
 
 --<--<output: Resolved 30 packages in 553ms
       Built nano-vllm @ file:///F:/AceStep/ACE-Step-1.5/acestep/thi
@@ -17,7 +18,7 @@ Uninstalled 2 packages in 73ms
 Installed 2 packages in 4.08s
 Loaded configuration from c:\AceStep\ACE-Step-1.5\.env
  ---------------------------Launch--------------------------------
- uv run .\acestep
+ \nuv run .\acestep
  
  CPU offload disabled by default (GPU >= 16GB)
 usage: acestep [-h] [--port PORT] [--share] [--debug]
@@ -39,8 +40,8 @@ usage: acestep [-h] [--port PORT] [--share] [--debug]
                [--api-key API_KEY]
                
 --------------------------Workflow-------------------------------
-Simple:
-Generate Song description->Create Sample->Generate->STOP (this clears the tensors in memory and the temp files in C:\Users\user0\AppData\Local\Temp\*)
+\nSimple:
+\nGenerate Song description->Create Sample->Generate->STOP (this clears the tensors in memory and the temp files in C:\Users\user0\AppData\Local\Temp\*)
 
 If you do not use STOP, the Gradio Interface will hang.
 Refreshing the browser will unhang the interface but will revert all settings to default.
